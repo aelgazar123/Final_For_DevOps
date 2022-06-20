@@ -6,4 +6,4 @@ EXPOSE 8501
 
 ENTRYPOINT ["streamlit", "run"]
 
-CMD ["main2.py"]
+CMD ["CIPHER_D2.py"]
