@@ -1,0 +1,17 @@
+stages:
+  - build
+  - build-docker-image
+
+build-nodejs-app:
+  stage:  build
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - /home/gitlab-runner/
+
+build-docker-image:
+  stage: build-docker-image
+  script:
+    - docker info
+

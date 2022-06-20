@@ -1,0 +1,4 @@
+import joblib from sklearn.externals
+naiveBayesModel = open("/model/packages","wb")
+joblib.dump(clf,naiveBayesModel)
+naiveBayesModel.close()
